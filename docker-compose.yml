@@ -17,7 +17,7 @@ services:
     container_name: proxy_node_nginx
     image: 'nginx:1.21.3-alpine'
     ports:
-      - '85:80'
+      - '80:80'
     networks:
       - node_connect
     restart: always
