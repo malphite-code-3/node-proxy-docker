@@ -1,0 +1,21 @@
+{
+  "name": "engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "pm2-runtime start app.js -i 0 --name proxy_node_app",
+    "start:prod": "pm2 start app.js -i 0 --name proxy_node_app",
+    "dev": "nodemon --exec node app.js"
+  },
+  "keywords": [],
+  "author": "Benjamin Iduwe",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14",
+    "pm2": "^5.1.2",
+    "response-transformer": "^0.6.0",
+    "ws": "^8.16.0"
+  }
+}
